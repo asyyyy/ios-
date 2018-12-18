@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ViewAnimation-->
+        <scene sceneID="Hwu-V0-bc8">
+            <objects>
+                <viewController id="PMN-vP-h1W" customClass="ViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UmB-wt-DH3"/>
+                        <viewControllerLayoutGuide type="bottom" id="hZz-KV-yIi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="erN-o1-xdh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fPu-g2-R2i">
+                                <rect key="frame" x="122.5" y="185.5" width="130" height="296"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4u-dJ-ALl">
+                                        <rect key="frame" x="0.0" y="0.0" width="130" height="30"/>
+                                        <state key="normal" title="Clear Move"/>
+                                        <connections>
+                                            <action selector="clear:" destination="PMN-vP-h1W" eventType="touchUpInside" id="XOH-pn-KYz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxy-TM-bon">
+                                        <rect key="frame" x="0.0" y="38" width="130" height="30"/>
+                                        <state key="normal" title="Basic Move"/>
+                                        <connections>
+                                            <action selector="animate:" destination="PMN-vP-h1W" eventType="touchUpInside" id="KjH-Lb-Zrs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzk-ji-Nfo">
+                                        <rect key="frame" x="0.0" y="76" width="130" height="30"/>
+                                        <state key="normal" title="Basic Transform"/>
+                                        <connections>
+                                            <action selector="transformanim:" destination="PMN-vP-h1W" eventType="touchUpInside" id="UJ2-TY-VU1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPj-CT-dwx">
+                                        <rect key="frame" x="0.0" y="114" width="130" height="30"/>
+                                        <state key="normal" title="KeyAnim"/>
+                                        <connections>
+                                            <action selector="keyframes:" destination="PMN-vP-h1W" eventType="touchUpInside" id="eWH-PW-B9l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDQ-0w-Nkx">
+                                        <rect key="frame" x="0.0" y="152" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.94184775310000002" green="1" blue="0.17706427620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Layer Transform"/>
+                                        <connections>
+                                            <action selector="layertransform:" destination="PMN-vP-h1W" eventType="touchUpInside" id="k1i-dv-3mD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gn-UL-eMy">
+                                        <rect key="frame" x="0.0" y="190" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.94184775310000002" green="1" blue="0.17706427620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="CABasicAnimation"/>
+                                        <connections>
+                                            <action selector="basicanim:" destination="PMN-vP-h1W" eventType="touchUpInside" id="zK0-nO-au6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Czr-Vv-GlQ">
+                                        <rect key="frame" x="0.0" y="228" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.94184775310000002" green="1" blue="0.17706427620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Layer3D Animation"/>
+                                        <connections>
+                                            <action selector="layer3danim:" destination="PMN-vP-h1W" eventType="touchUpInside" id="mgI-3Z-oTz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXt-Go-ZTN">
+                                        <rect key="frame" x="0.0" y="266" width="130" height="30"/>
+                                        <color key="backgroundColor" red="0.94184775310000002" green="1" blue="0.17706427620000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="CAKeyFrameAnim"/>
+                                        <connections>
+                                            <action selector="cakeyframeanim:" destination="PMN-vP-h1W" eventType="touchUpInside" id="pmW-th-qoc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World!!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBE-3z-Ns6">
+                                <rect key="frame" x="133.5" y="20" width="108" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c9J-oE-GzG">
+                                <rect key="frame" x="115" y="48.5" width="145" height="116"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hEJ-fF-V1e">
+                                        <rect key="frame" x="67" y="57" width="10" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.93465621389999998" blue="0.39519143969999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fPu-g2-R2i" firstAttribute="centerY" secondItem="erN-o1-xdh" secondAttribute="centerY" id="5kx-Ih-q86"/>
+                            <constraint firstItem="XBE-3z-Ns6" firstAttribute="centerX" secondItem="erN-o1-xdh" secondAttribute="centerX" id="7oq-5U-QiB"/>
+                            <constraint firstItem="XBE-3z-Ns6" firstAttribute="top" secondItem="UmB-wt-DH3" secondAttribute="bottom" id="JdR-Rh-5A6"/>
+                            <constraint firstItem="c9J-oE-GzG" firstAttribute="top" secondItem="XBE-3z-Ns6" secondAttribute="bottom" constant="8" id="Ne5-Rd-Mfg"/>
+                            <constraint firstItem="fPu-g2-R2i" firstAttribute="centerX" secondItem="erN-o1-xdh" secondAttribute="centerX" id="O8F-Gm-hJ3"/>
+                            <constraint firstItem="fPu-g2-R2i" firstAttribute="top" secondItem="c9J-oE-GzG" secondAttribute="bottom" constant="21" id="U5K-h3-Mst"/>
+                            <constraint firstItem="c9J-oE-GzG" firstAttribute="centerX" secondItem="erN-o1-xdh" secondAttribute="centerX" id="Wae-ix-c97"/>
+                            <constraint firstItem="c9J-oE-GzG" firstAttribute="leading" secondItem="erN-o1-xdh" secondAttribute="leadingMargin" constant="99" id="fht-z6-Gqd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Q8X-Db-EnY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ViewAnimation" id="rR6-6s-9IJ"/>
+                    <connections>
+                        <outlet property="testLabel" destination="XBE-3z-Ns6" id="9Nu-OD-zhN"/>
+                        <outlet property="testview" destination="c9J-oE-GzG" id="MaG-gK-wvz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qws-bH-Bef" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.19999999999999" y="-107.49625187406298"/>
+        </scene>
+        <!--TransitionView-->
+        <scene sceneID="qpD-dv-Dy4">
+            <objects>
+                <viewController id="xm1-pB-ztc" customClass="TransitionViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2gS-J3-dbo"/>
+                        <viewControllerLayoutGuide type="bottom" id="321-rM-BzS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1iM-Pl-frr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6KH-TZ-Jw0">
+                                <rect key="frame" x="147" y="310" width="79" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transition 1"/>
+                                <connections>
+                                    <action selector="transition1:" destination="xm1-pB-ztc" eventType="touchUpInside" id="yrn-Je-7i8"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KD6-mI-NwJ">
+                                <rect key="frame" x="89" y="153" width="197" height="106"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.93465621389999998" blue="0.39519143969999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XYG-7n-KXl">
+                                <rect key="frame" x="147" y="364" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transition 2"/>
+                                <connections>
+                                    <action selector="transition2:" destination="xm1-pB-ztc" eventType="touchUpInside" id="VjP-WS-I4S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAF-Ee-a2w">
+                                <rect key="frame" x="147" y="418" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transition 3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Soy-IJ-ULQ">
+                                <rect key="frame" x="145" y="472" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Transition 4"/>
+                                <connections>
+                                    <action selector="transitionCustom:" destination="xm1-pB-ztc" eventType="touchUpInside" id="6Mp-x6-roM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="rMh-35-fsd"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="TransitionView" id="Bf7-05-pgr"/>
+                    <connections>
+                        <outlet property="testView" destination="KD6-mI-NwJ" id="Z11-Wt-8Ud"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GI1-Ip-3KU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82" y="644"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="7Xo-Kf-o1y">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" id="2uB-Vq-1y6" customClass="SecondViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9bm-RY-rWs"/>
+                        <viewControllerLayoutGuide type="bottom" id="SV3-GM-gHZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sYH-Hy-NlL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zja-xt-MP7">
+                                <rect key="frame" x="149" y="364" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jip-r2-OAl">
+                                <rect key="frame" x="149" y="414" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="close"/>
+                                <connections>
+                                    <action selector="close:" destination="2uB-Vq-1y6" eventType="touchUpInside" id="QDI-EN-o4R"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="9LV-Ev-5UK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z9J-D5-G7p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="611"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="c3X-eM-LEU">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="pUP-AZ-rOe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="oeN-Iw-Wq8">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="giz-6l-9pv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724" y="-107.49625187406298"/>
+        </scene>
+    </scenes>
+</document>

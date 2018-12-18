@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DynamicDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mxw-BF-xPN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="PdN-I0-2Aw">
+                                <rect key="frame" x="17.5" y="625" width="340" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSS-a8-dn0">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="Add"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A70-cP-wgb">
+                                        <rect key="frame" x="57" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="up"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7t-ez-yWU">
+                                        <rect key="frame" x="114" y="0.0" width="38" height="30"/>
+                                        <state key="normal" title="down"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14f-1e-NoC">
+                                        <rect key="frame" x="179" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="left"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TaT-um-R6D">
+                                        <rect key="frame" x="236" y="0.0" width="32" height="30"/>
+                                        <state key="normal" title="right"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj1-2E-Nnu">
+                                        <rect key="frame" x="295" y="0.0" width="45" height="30"/>
+                                        <state key="normal" title="Delete"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j20-ai-8gG">
+                                <rect key="frame" x="16" y="20" width="343" height="597"/>
+                                <color key="backgroundColor" red="0.96154767269999997" green="0.99450296159999996" blue="0.0028838696890000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j20-ai-8gG" firstAttribute="centerX" secondItem="PdN-I0-2Aw" secondAttribute="centerX" id="AZo-Nw-vPr"/>
+                            <constraint firstItem="PdN-I0-2Aw" firstAttribute="centerX" secondItem="vJV-GZ-HRc" secondAttribute="centerX" id="HVP-Gb-1Eo"/>
+                            <constraint firstItem="j20-ai-8gG" firstAttribute="leading" secondItem="Mxw-BF-xPN" secondAttribute="leadingMargin" id="W3B-tY-BE0"/>
+                            <constraint firstItem="vJV-GZ-HRc" firstAttribute="bottom" secondItem="PdN-I0-2Aw" secondAttribute="bottom" constant="12" id="Zya-v4-Mhe"/>
+                            <constraint firstItem="j20-ai-8gG" firstAttribute="top" secondItem="vJV-GZ-HRc" secondAttribute="top" id="baR-Py-5BA"/>
+                            <constraint firstItem="PdN-I0-2Aw" firstAttribute="top" secondItem="j20-ai-8gG" secondAttribute="bottom" constant="8" symbolic="YES" id="mPp-wl-47x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vJV-GZ-HRc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
